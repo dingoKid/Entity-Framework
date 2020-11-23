@@ -10,7 +10,7 @@ namespace ShadEntityFrameworkApp.Models
         public int EmployeeId { get; set; }
         
         [Column("FullName", TypeName = "nvarchar(250)")]
-        [Required]
+        [Required(ErrorMessage = "This field is required!")]
         [DisplayName("Full Name")]
         public string FullName { get; set; }
         
